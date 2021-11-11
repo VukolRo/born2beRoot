@@ -134,3 +134,5 @@
   - as login you may choose root or new user name wich you created while installing Debian
   - run comand lsblk to see the structure we created
     ![image](https://user-images.githubusercontent.com/61047851/141361453-49a83ac8-365d-4f2a-8266-1816c65157ea.png)
+
+## Finished!
