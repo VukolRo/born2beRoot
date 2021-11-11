@@ -104,8 +104,13 @@
       ![image](https://user-images.githubusercontent.com/61047851/141353150-01c5775c-44f5-46aa-946a-91f2a7b1d95d.png)
     - choose "finish" to submit partitioning
       ![image](https://user-images.githubusercontent.com/61047851/141353220-68417fcf-8c8f-4f8f-985e-50012bf0aac5.png)
-    - than you should choose each 7 partitions and make next few steps
+    - than you should choose each 7 partitions and make next 3 steps
       ![image](https://user-images.githubusercontent.com/61047851/141353372-cef26563-9812-44a1-acf8-46a8cc75b1b2.png)
-      - choose "Use as" for each as 
+      - choose "Use as" for each(except "swap") choose "Ext4", for swap choose "swap area"
+      - than for each choose "Mount point"(except "swap") according to subject, for "var/log" use "Enter manually" option
+        ![image](https://user-images.githubusercontent.com/61047851/141354639-79a94d71-d0d3-4031-a34e-c7156adc9107.png)
+      - than choose "Done setting up the partition"
+    -choose "Finish partitioning and write changes to disk" when you finished preveous 4 steps and have that picture
+      ![image](https://user-images.githubusercontent.com/61047851/141355133-55f3c623-0e9a-4e43-ae3e-c8ffca57f78b.png)
 
     
