@@ -110,7 +110,27 @@
       - than for each choose "Mount point"(except "swap") according to subject, for "var/log" use "Enter manually" option
         ![image](https://user-images.githubusercontent.com/61047851/141354639-79a94d71-d0d3-4031-a34e-c7156adc9107.png)
       - than choose "Done setting up the partition"
-    -choose "Finish partitioning and write changes to disk" when you finished preveous 4 steps and have that picture
+    - choose "Finish partitioning and write changes to disk" when you finished preveous 4 steps and have that picture
       ![image](https://user-images.githubusercontent.com/61047851/141355133-55f3c623-0e9a-4e43-ae3e-c8ffca57f78b.png)
-
-    
+    - choose "Yes" for "write the changes to disk"
+    - choose "No" for "Scan extra instalattion media"
+      ![image](https://user-images.githubusercontent.com/61047851/141357509-18d66b43-890c-49c6-9a72-473250618820.png)
+    - choose ur location for Debian mirror
+    - choose deb.debian.org for Debian archive mirror
+    - leave field blank for HTTP proxy info, just press "enter" key
+    - choose "no" if u don't want to participate in the packege usage survey
+      ![image](https://user-images.githubusercontent.com/61047851/141358355-39a738d9-ebc6-4ed0-b25b-5df5d3df7fc2.png)
+    - unmark "Debian desktop environment" and "GNOME", and mark "SSH server" and "standart system utilities"
+      ![image](https://user-images.githubusercontent.com/61047851/141358587-95817c0d-1db1-49d1-bd2f-f40766d6e686.png)
+    - choose "Yes" for "install GRUB"
+      ![image](https://user-images.githubusercontent.com/61047851/141359554-b80eda39-8b88-4cf0-912d-817134976f34.png)
+    - choose /dev/sda... for instalation
+      ![image](https://user-images.githubusercontent.com/61047851/141359678-476ffde4-c51b-4b77-a81d-510ce2bd94d0.png)
+    - choose continui to reboot
+      ![image](https://user-images.githubusercontent.com/61047851/141360142-d5bdfaee-07b7-4460-8d5d-56ba811dcb4e.png)
+10. After reboout 
+  - choose one of 2 interface
+  - type crypto passphrase
+  - as login you may choose root or new user name wich you created while installing Debian
+  - run comand lsblk to see the structure we created
+    ![image](https://user-images.githubusercontent.com/61047851/141361453-49a83ac8-365d-4f2a-8266-1816c65157ea.png)
