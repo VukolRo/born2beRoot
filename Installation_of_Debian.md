@@ -1,5 +1,5 @@
-### Debian installation
-  # My steps to create a [Debian](https://www.debian.org/) based server using [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
+# Debian installation
+  ### My steps to create a [Debian](https://www.debian.org/) based server using [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 1. Install and Run VirtualBox
 <a id="step2" /> 2. Download the latest stabel version of Debian
 3. Click to "New" button to manage pre-installation settings
