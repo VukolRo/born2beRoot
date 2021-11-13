@@ -2,7 +2,8 @@
 
 ### Some of standart sustem utilites you will use for setting up your server
 - `su` Substitute User identtity
-  you may use that command for switching beetween users you got(`su <user_name>`), or to root user(`su` or `su -`)
+  you may use that command for switching beetween users you got(`su <user_name>`),    
+  to root user(`su` or `su -`)
 - `usermod [options] <user_name>`
   allows you to modify a user’s login information
   - `-a` (append) always use `-a` option when adding user to new group, if you omit taht,    
