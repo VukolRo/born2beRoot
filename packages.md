@@ -9,6 +9,6 @@
   - `-G` (group) adding user into group listed after that option
   - `-l` option is used to change the username `usermod -l <new_user_name> <user_name>`
   
-### Packeges you have to install as required in subject
+## Packeges you have to install as required in subject
 - `sudo` Super User do
   sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
