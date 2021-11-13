@@ -13,7 +13,11 @@
   - `-e` option is set the user’s expiry date `sudo usermod -e "YYYY-MM-DD" <user_name>`    
         to disable the expiration of an account `sudo usermod -e "" <user_name>`    
         to view the user’s expiry date `sudo chage -l <user_name>`    
-  - 
+  - `-L` option allows you to lock a user account `sudo usermod -L <user_name>`
+  - `-U` to unlock a user `sudo usermod -U <user_name>`
+
 ### Packeges you have to install as required in subject
-- `sudo` Super User do
-  sudo allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
+- `sudo` Super User do    
+  `sudo` allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
+- `apt` *Advanced Packaging Tool*     
+   
