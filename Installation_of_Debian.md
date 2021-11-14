@@ -98,7 +98,7 @@
       ![image](https://user-images.githubusercontent.com/61047851/141351994-96763ed5-f7bc-4558-843c-feccca5cc337.png)
     - choose LVMGroup
     - than type one of seven partition name(root, swap, var, srv, tmp, var-log)
-    - choose size according to subject
+    - choose size based on that 1 GiB = 1073.74 MiB
     - repeat 4 previous steps for all partitions
     - choose "Display config details" to se how partitioning is going
       ![image](https://user-images.githubusercontent.com/61047851/141353150-01c5775c-44f5-46aa-946a-91f2a7b1d95d.png)
