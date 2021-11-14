@@ -19,4 +19,27 @@
 ### Packeges you have to install as required in subject
 - `sudo` Super User do    
   `sudo` allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
+  `sudo visudo` open sudoers file
 - `apt` *Advanced Packaging Tool*    
+  `apt-get`
+  `apt-cahce`
+- `getent`
+- `systemctl status ssh`Check the SSH server status
+- `service ssh restart` Restart the SSH service
+
+- `/etc/ssh/sshd_config`  Changing default port
+- `service ssh restart` Restart the SSH service
+
+- `apt-get install ufw` Installing and configuring UFW (Uncomplicated Firewall)
+  `enable`
+  `status numbered` Check the status
+  `allow ssh` Configure the rules
+  `ufw allow 4242` Configure the port rules
+  `delete (that number, for example 5 or 6)` delete the new rule
+  `ssh <your_username>@0.0.0.0 -p 4242` connect to your server from terminal of your host PC           
+    you may find out the IP adress which you need to connect to your server     
+    by running command `sudo service ssh status` in server terminal, amd chek **Server listening on..** line     
+    like you can see on screanshot below
+    ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
+
+  
