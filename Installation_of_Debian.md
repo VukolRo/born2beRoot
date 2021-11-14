@@ -46,8 +46,8 @@
   - First we need to creat **"sda1"** part and give it /boot mount point
     - choose "Create a new partition"
       ![image](https://user-images.githubusercontent.com/61047851/141335355-b5360c04-2c6a-45e9-a0dd-3ab2be711fc9.png)
-    - type "500 M" as required in subject for sda1
-      ![image](https://user-images.githubusercontent.com/61047851/141335639-fedc51c7-fe8b-4c86-a999-2f030e006095.png)
+    - type "525 M" as required in subject for sda1
+      ![image](https://user-images.githubusercontent.com/61047851/141675705-18af1a49-1c29-4ceb-b149-57b175ac3274.png)
     - choose "primary" type for that partition
       ![image](https://user-images.githubusercontent.com/61047851/141335721-3d29c902-4bb4-4c7f-8fc9-81145f6c42de.png)
     - choose "beginning" for that part
