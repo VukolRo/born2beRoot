@@ -98,7 +98,14 @@
       ![image](https://user-images.githubusercontent.com/61047851/141351994-96763ed5-f7bc-4558-843c-feccca5cc337.png)
     - choose LVMGroup
     - than type one of seven partition name(root, swap, var, srv, tmp, var-log)
-    - choose size based on that 1 GiB = 1073.74 MiB
+    - choose size based on that 1 GiB = 107341824 B     
+      but round up like:        
+      root          - 10 GB  (10740) 10 737 418 200 B        
+      home          - 5 GB   (5372)  5 368 709 120 B      
+      swap          - 2.3 GB (2469)  2 469 606 200 B       
+      var, srv, tmp - 3 GB   (3225)  3 221 225 470 B     
+      var-log       - 4 GB   (4280)  4 294 967 300 B  
+      ![image](https://user-images.githubusercontent.com/61047851/141677885-1f56c2dc-5d7f-4593-a2ec-b00df2805b0d.png)
     - repeat 4 previous steps for all partitions
     - choose "Display config details" to se how partitioning is going
       ![image](https://user-images.githubusercontent.com/61047851/141353150-01c5775c-44f5-46aa-946a-91f2a7b1d95d.png)
