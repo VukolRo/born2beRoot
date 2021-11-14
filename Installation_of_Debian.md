@@ -104,10 +104,9 @@
       swap          - 2 469 606 200 B       
       var, srv, tmp - 3 221 225 470 B     
       var-log       - 4 294 967 300 B (here, you might be limited by the remaining of memory, just choose what you have) 
-      ![image](https://user-images.githubusercontent.com/61047851/141677885-1f56c2dc-5d7f-4593-a2ec-b00df2805b0d.png)
     - repeat 4 previous steps for all partitions
     - choose "Display config details" to se how partitioning is going
-      ![image](https://user-images.githubusercontent.com/61047851/141353150-01c5775c-44f5-46aa-946a-91f2a7b1d95d.png)
+      ![image](https://user-images.githubusercontent.com/61047851/141677885-1f56c2dc-5d7f-4593-a2ec-b00df2805b0d.png)
     - choose "finish" to submit partitioning
       ![image](https://user-images.githubusercontent.com/61047851/141353220-68417fcf-8c8f-4f8f-985e-50012bf0aac5.png)
     - than you should choose each 7 partitions and make next 3 steps
