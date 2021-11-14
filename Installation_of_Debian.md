@@ -97,8 +97,8 @@
     - than for each partition of LVMGroup choose "create logical volume"
       ![image](https://user-images.githubusercontent.com/61047851/141351994-96763ed5-f7bc-4558-843c-feccca5cc337.png)
     - choose LVMGroup
-    - than type one of seven partition name(root, swap, var, srv, tmp, var-log)
-    - choose size based on that 1 GiB = 107341824 B           
+    - than type one of seven partition name(root, swap, var, srv, tmp, var-log)         
+    choose size based on that 1 GiB = 107341824 B           
       root          - 10 737 418 200 B        
       home          - 5 368 709 120 B      
       swap          - 2 469 606 200 B       
