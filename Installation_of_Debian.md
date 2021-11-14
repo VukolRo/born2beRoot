@@ -127,8 +127,8 @@
     - leave field blank for HTTP proxy info, just press "enter" key
     - choose "no" if u don't want to participate in the packege usage survey
       ![image](https://user-images.githubusercontent.com/61047851/141358355-39a738d9-ebc6-4ed0-b25b-5df5d3df7fc2.png)
-    - unmark "Debian desktop environment" and "GNOME", and mark "SSH server" and "standart system utilities"
-      ![image](https://user-images.githubusercontent.com/61047851/141358587-95817c0d-1db1-49d1-bd2f-f40766d6e686.png)
+    - deselect all options. We’ll install all we need later manually (To deselect, just hit SPACE key)
+      ![image](https://user-images.githubusercontent.com/61047851/141678226-f8348d84-8d2e-4eae-be54-3b4d98743d1e.png)
     - choose "Yes" for "install GRUB"
       ![image](https://user-images.githubusercontent.com/61047851/141359554-b80eda39-8b88-4cf0-912d-817134976f34.png)
     - choose /dev/sda... for instalation
