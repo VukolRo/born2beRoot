@@ -98,13 +98,12 @@
       ![image](https://user-images.githubusercontent.com/61047851/141351994-96763ed5-f7bc-4558-843c-feccca5cc337.png)
     - choose LVMGroup
     - than type one of seven partition name(root, swap, var, srv, tmp, var-log)
-    - choose size based on that 1 GiB = 107341824 B     
-      but round up like:        
-      root          - 10 GB  (10740) 10 737 418 200 B        
-      home          - 5 GB   (5372)  5 368 709 120 B      
-      swap          - 2.3 GB (2469)  2 469 606 200 B       
-      var, srv, tmp - 3 GB   (3225)  3 221 225 470 B     
-      var-log       - 4 GB   (4280)  4 294 967 300 B  
+    - choose size based on that 1 GiB = 107341824 B           
+      root          - 10 737 418 200 B        
+      home          - 5 368 709 120 B      
+      swap          - 2 469 606 200 B       
+      var, srv, tmp - 3 221 225 470 B     
+      var-log       - 4 294 967 300 B (here, you might be limited by the remaining of memory, just choose what you have) 
       ![image](https://user-images.githubusercontent.com/61047851/141677885-1f56c2dc-5d7f-4593-a2ec-b00df2805b0d.png)
     - repeat 4 previous steps for all partitions
     - choose "Display config details" to se how partitioning is going
@@ -140,6 +139,6 @@
   - type crypto passphrase
   - as login you may choose root or new user name wich you created while installing Debian
   - run comand lsblk to see the structure we created
-    ![image](https://user-images.githubusercontent.com/61047851/141361453-49a83ac8-365d-4f2a-8266-1816c65157ea.png)
+    ![image](https://user-images.githubusercontent.com/61047851/141678326-851bad0a-a5ba-47f3-aa9e-f9e564bda03e.png)
 
 ## Finished!
