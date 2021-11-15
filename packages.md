@@ -33,6 +33,13 @@
   ```
   $ systemctl status ssh
   ```
+- `dpkg` package manager for Debian          
+  `dpkg [option...] action`        
+  `-l` shows list with all packages you got       
+  check is sudo already installed: 
+  ```
+  dpkg -l | grep sudo
+  ```
 - `reboot` use that command to reboot your server
 - `poweroff` use that command to shutdown the server
 
@@ -41,15 +48,26 @@
   `sudo` allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
   `sudo visudo` open sudoers file
 - `apt` *Advanced Packaging Tool*    
-  `apt-get`
-  `apt-cahce`
-- `systemctl status ssh`Check the SSH server status
-- `service ssh restart` Restart the SSH service
+  `apt [options] command`   
+  options        
+  - `update` always update the package index before upgrading or installing new packages
+  - `upgrade` to upgrade the installed packages to their latest versions
+  - `install` if you want to install multiple packages with one command, specify them as a space-separated list
+  ```
+  $ apt install package_name
+  $ apt install package1 package2
+  ```
+  - `remove`/`purge` the remove command will uninstall the given packages, but it may leave some configuration files behind.        
+    If you want to remove the package including all configuration files, use `purge` instead of `remove`  
+  ```
+  $ apt remove package_name
+  $ apt remove package1 package2
+  $ apt purge package_name
+  ```
 
-- `/etc/ssh/sshd_config`  Changing default port
-- `service ssh restart` Restart the SSH service
 
-- `apt-get install ufw` Installing and configuring UFW (Uncomplicated Firewall)
+- `ufw` Installing and configuring UFW (Uncomplicated Firewall)       
+  
   `enable`
   `status numbered` Check the status
   `allow ssh` Configure the rules
