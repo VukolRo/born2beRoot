@@ -52,7 +52,19 @@
   allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
   - `sudo visudo` open sudoers file      
   - add this line in file to give your user root permition         
-    `<user_name> ALL=(ALL:ALL) ALL`
+    `<user_name> ALL=(ALL:ALL) ALL`        
+  - `groupadd` create a new group       
+    creat a group "user42" as required in subject
+    ```
+    $ groupadd user42
+    ```      
+    add user into "user42" and "sudo" groups as required in subject
+    ```
+    $ usermod -aG user42 <user_name>
+    $ usermod -aG sudo <user_name>
+    ```       
+    `getent group user42` shows who in that group
+    
 - `apt` *Advanced Packaging Tool*    
   `apt [options] command`   
   options        
@@ -70,8 +82,6 @@
   $ apt remove package1 package2
   $ apt purge package_name
   ```
-
-
 - `ufw` Installing and configuring UFW (Uncomplicated Firewall)       
   `ufw [--dry-run] [options] [rule syntax]`        
   options
