@@ -90,10 +90,26 @@
     ```
     uwf delete <number of rule>
     ```
-- connect to your server from terminal of your host PC
-  ```
-  ssh <your_username>@0.0.0.0 -p 4242
-  ```
+- SSH instalation and gonfiguration         
+  - `apt install openssh-server` install ssh package         
+    `systemctl status ssh` check the ssh status        
+    `systemctl restart ssh` restart the ssh service        
+    chang port 22 to port 4242          
+    open with vim or other redactor that file - `/etc/ssh/sshd_config`         
+    change the line "#Port 22" to "Port 4242"        
+    `systemctl restart ssh` restart it again
+  - add forward rule for VirtualBox         
+    go to VirtualBox -> choose your server -> select "settings"           
+    choose "Network" -> "Adapter 1" -> "Advanced" -> "Port Forwarding"          
+    enter the values as shown below            
+    ![image](https://user-images.githubusercontent.com/61047851/141803988-78344524-2fdb-4d51-8f70-b37090caade9.png)
+  - connect to your server from terminal of your host PC
+    ```
+    ssh <your_username>@0.0.0.0 -p 4242
+    ```
+   to quit the connection use comand        
+   `exit`        
+   
   you may find out the IP address, which you need to connect to your server, by running     
   command `sudo systemctl status ssh` in server terminal, and check the line with following text     
   **Server listening on..** (like you can see on screanshot below)
