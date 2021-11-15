@@ -14,7 +14,11 @@
         to disable the expiration of an account `sudo usermod -e "" <user_name>`    
         to view the user’s expiry date `sudo chage -l <user_name>`    
   - `-L` option allows you to lock a user account `sudo usermod -L <user_name>`
-  - `-U` to unlock a user `sudo usermod -U <user_name>`
+  - `-U` to unlock a user `sudo usermod -U <user_name>`         
+  example
+  ```
+  $ usermod -aG sudo shavok
+  ```
 - `getent database [key ...]` *Get Entries*     
   a Unix command that helps a user get entries in a number of important text files called databases
   ```
