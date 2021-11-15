@@ -50,7 +50,9 @@
 ## Packeges you have to install as required in subject
 - `sudo` Super User do    
   allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
-  - `sudo visudo` open sudoers file
+  - `sudo visudo` open sudoers file      
+  - add this line in file to give your user root permition         
+    `<user_name> ALL=(ALL:ALL) ALL`
 - `apt` *Advanced Packaging Tool*    
   `apt [options] command`   
   options        
@@ -80,15 +82,15 @@
   - `status numbered` show firewall status as numbered list of RULES
   - configure the rules
     ```
-    ufw allow ssh
+    $ ufw allow ssh
     ```
   - configure the port rules
     ```
-    ufw allow 4242
+    $ ufw allow 4242
     ```
   - to delete some of rules listed after `ufw status numbered`
     ```
-    uwf delete <number of rule>
+    $ uwf delete <number of rule>
     ```
 - SSH instalation and gonfiguration         
   - `apt install openssh-server` install ssh package         
@@ -105,7 +107,7 @@
     ![image](https://user-images.githubusercontent.com/61047851/141803988-78344524-2fdb-4d51-8f70-b37090caade9.png)
   - connect to your server from terminal of your host PC
     ```         
-    ssh <your_username>@0.0.0.0 -p 4242       
+    $ ssh <your_username>@0.0.0.0 -p 4242       
     ```         
     to quit the connection use comand        
     `exit`        
