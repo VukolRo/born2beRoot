@@ -69,8 +69,11 @@
 - `ufw` Installing and configuring UFW (Uncomplicated Firewall)       
   `ufw [--dry-run] [options] [rule syntax]`        
   options
-  - `enable`
-  - `status numbered` Check the status
+  - `enable` / `disable` enables / disables the firewall
+  - `reload` / `rest` reload / reset the firewall
+  - `allow ARGS` / `deny ARGS` add allow / deny rule
+  - `status` show firewall status
+  - `status numbered` show firewall status as numbered list of RULES
   - configure the rules
     ```
     ufw allow ssh
@@ -79,7 +82,7 @@
     ```
     ufw allow 4242
     ```
-  - to delet some of rules listed after `ufw status numbered`
+  - to delete some of rules listed after `ufw status numbered`
     ```
     uwf delete <number of rule>
     ```
