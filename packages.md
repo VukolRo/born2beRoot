@@ -67,17 +67,27 @@
 
 
 - `ufw` Installing and configuring UFW (Uncomplicated Firewall)       
+  `ufw [--dry-run] [options] [rule syntax]`        
   options
   - `enable`
   - `status numbered` Check the status
-  - `allow ssh` Configure the rules
-  - `ufw allow 4242` Configure the port rules
-  - `delete (that number, for example 5 or 6)` delete the new rule            
+  - configure the rules
+    ```
+    ufw allow ssh
+    ```
+  - configure the port rules
+    ```
+    ufw allow 4242
+    ```
+  - to delet some of rules listed after `ufw status numbered`
+    ```
+    uwf delete <number of rule>
+    ```
 - connect to your server from terminal of your host PC
   ```
   ssh <your_username>@0.0.0.0 -p 4242
   ```
-  you may find out the IP address which you need to connect to your server by running     
+  you may find out the IP address, which you need to connect to your server, by running     
   command `sudo systemctl status ssh` in server terminal, and check the line with following text     
   **Server listening on..** (like you can see on screanshot below)
     ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
