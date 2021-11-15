@@ -1,6 +1,6 @@
 # Installing and configure packages for your server
 
-### Some of standart sustem utilites you will use for setting up your server
+## Some of standart sustem utilites you will use for setting up your server
 - `su` Substitute User identtity
   you may use that command for switching beetween users you got(`su <user_name>`),    
   to root user(`su` or `su -`)
@@ -20,7 +20,23 @@
   ```
   $ getent group sudo
   ```
-### Packeges you have to install as required in subject
+- `systemctl` control the `systemd` system and service manager       
+  `systemctl [OPTIONS...] COMMAND [UNIT...]`       
+  options
+  - `restart` Stop and then start one or more units specified on the command          
+     line. If the units are not running yet, they will be started        
+  ```
+  $ systemctl restart ssh
+  ```
+  - `status` Show terse runtime status information about one or more units, followed by most       
+           recent log data from the journal. If no units are specified, show system status
+  ```
+  $ systemctl status ssh
+  ```
+- `reboot` use that command to reboot your server
+- `poweroff` use that command to shutdown the server
+
+## Packeges you have to install as required in subject
 - `sudo` Super User do    
   `sudo` allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
   `sudo visudo` open sudoers file
