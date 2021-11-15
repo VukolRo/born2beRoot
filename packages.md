@@ -15,7 +15,11 @@
         to view the user’s expiry date `sudo chage -l <user_name>`    
   - `-L` option allows you to lock a user account `sudo usermod -L <user_name>`
   - `-U` to unlock a user `sudo usermod -U <user_name>`
-
+- `getent database [key ...]` *Get Entries*     
+  a Unix command that helps a user get entries in a number of important text files called databases
+  ```
+  $ getent group sudo
+  ```
 ### Packeges you have to install as required in subject
 - `sudo` Super User do    
   `sudo` allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
@@ -23,7 +27,6 @@
 - `apt` *Advanced Packaging Tool*    
   `apt-get`
   `apt-cahce`
-- `getent`
 - `systemctl status ssh`Check the SSH server status
 - `service ssh restart` Restart the SSH service
 
