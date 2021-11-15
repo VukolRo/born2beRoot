@@ -49,8 +49,8 @@
 
 ## Packeges you have to install as required in subject
 - `sudo` Super User do    
-  `sudo` allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
-  `sudo visudo` open sudoers file
+  allows a permitted user to execute a command as the superuser or another user, as specified by the security policy
+  - `sudo visudo` open sudoers file
 - `apt` *Advanced Packaging Tool*    
   `apt [options] command`   
   options        
