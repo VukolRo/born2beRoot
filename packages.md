@@ -104,11 +104,11 @@
     enter the values as shown below            
     ![image](https://user-images.githubusercontent.com/61047851/141803988-78344524-2fdb-4d51-8f70-b37090caade9.png)
   - connect to your server from terminal of your host PC
-    ```
-    ssh <your_username>@0.0.0.0 -p 4242
-    ```
-   to quit the connection use comand        
-   `exit`        
+    ```         
+    ssh <your_username>@0.0.0.0 -p 4242       
+    ```         
+    to quit the connection use comand        
+    `exit`        
     you may find out the IP address, which you need to connect to your server, by running     
     command `sudo systemctl status ssh` in server terminal, and check the line with following text     
     **Server listening on..** (like you can see on screanshot below)
