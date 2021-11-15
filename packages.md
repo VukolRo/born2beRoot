@@ -63,7 +63,8 @@
     $ usermod -aG user42 <user_name>
     $ usermod -aG sudo <user_name>
     ```       
-    `getent group user42` shows who in that group
+    `$ getent group user42` shows who in that group       
+    `groups` run that command to see in which groups your user belongs        
     
 - `apt` *Advanced Packaging Tool*    
   `apt [options] command`   
