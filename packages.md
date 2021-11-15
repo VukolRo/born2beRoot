@@ -77,9 +77,9 @@
   ```
   ssh <your_username>@0.0.0.0 -p 4242
   ```
-  you may find out the IP address which you need to connect to your server     
-  by running command `sudo systemctl status ssh` in server terminal, and chek the **Server listening on..** line     
-  like you can see on screanshot below
+  you may find out the IP address which you need to connect to your server by running     
+  command `sudo systemctl status ssh` in server terminal, and chek the line      
+  **Server listening on..** (like you can see on screanshot below)
     ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
 
   
