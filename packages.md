@@ -110,9 +110,9 @@
    to quit the connection use comand        
    `exit`        
    
-  you may find out the IP address, which you need to connect to your server, by running     
-  command `sudo systemctl status ssh` in server terminal, and check the line with following text     
-  **Server listening on..** (like you can see on screanshot below)
-    ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
+    you may find out the IP address, which you need to connect to your server, by running     
+    command `sudo systemctl status ssh` in server terminal, and check the line with following text     
+    **Server listening on..** (like you can see on screanshot below)
+      ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
 
   
