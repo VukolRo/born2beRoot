@@ -44,6 +44,11 @@
   ```
   dpkg -l | grep sudo
   ```
+- `hostnamectl` check current hostname        
+  change hostname       
+  ```
+  $ hostnamectl <old-hostname> <new_hostname>
+  ```
 - `reboot` use that command to reboot your server
 - `poweroff` use that command to shutdown the server
 
@@ -126,5 +131,6 @@
     command `sudo systemctl status ssh` in server terminal, and check the line with following text     
     **Server listening on..** (like you can see on screanshot below)
       ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
+ - crontab
 
   
