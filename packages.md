@@ -132,7 +132,7 @@
     **Server listening on..** (like you can see on screanshot below)
       ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
 - For create a script we need to install "netstat" which is contained in "net-tools" package        
-  **"netstat""** is used to report network connections, routing tables, and interface statistics      
+  **"netstat"** is used to report network connections, routing tables, and interface statistics      
   ```
   $ apt install net-tools
   ```         
