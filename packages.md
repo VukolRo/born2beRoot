@@ -108,7 +108,7 @@
     ```
     $ uwf delete <number of rule>
     ```
-- SSH instalation and gonfiguration         
+- SSH instalation and configuration         
   - `apt install openssh-server` install ssh package         
     `systemctl status ssh` check the ssh status        
     `systemctl restart ssh` restart the ssh service        
@@ -131,6 +131,11 @@
     command `sudo systemctl status ssh` in server terminal, and check the line with following text     
     **Server listening on..** (like you can see on screanshot below)
       ![image](https://user-images.githubusercontent.com/61047851/141690139-418f75bb-e035-44ef-9a9b-f325a649333a.png)
- - crontab
+- For create a script we need to install "netstat" which is contained in "net-tools" package        
+  **"netstat""** is used to report network connections, routing tables, and interface statistics      
+  ```
+  $ apt install net-tools
+  ```         
+  
 
   
