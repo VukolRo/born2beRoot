@@ -16,7 +16,11 @@
 
 - All bash scripts should start with that first line
   `#!/bin/bash`
-- Next we will use `wall` command which will display information received by our script on the terminals of all logged-in users
+- Next we will use `wall` command which will display information received by our script on the terminals of all logged-in users         
+  Exampl of each line for bash script:
 ```
 $'#Architecture: ' `uname -a` \
-```
+```        
+  - use `$` to enable spec simbols further in quotes `" "`
+  - everithing in `" "` or `' '` will display in standard output
+  - everithing in `` `` will run as a comand
