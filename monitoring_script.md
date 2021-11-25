@@ -1,4 +1,4 @@
-## Creating a monitoring.sh script which will shows current information about our server
+## Creating a script which will shows current information about our server
 
   #### It must display following information:
 1. The architecture of your operating system and its kernel version
@@ -13,3 +13,10 @@
 10. The number of users using the server
 11. The IPv4 address of your server and its MAC (Media Access Control) address
 12. The number of commands executed with the sudo program
+
+- All bash scripts should start with that first line
+  `#!/bin/bash`
+- Next we will use `wall` command which will display information received by our script on the terminals of all logged-in users
+```
+$'#Architecture: ' `uname -a` \
+```
