@@ -30,4 +30,9 @@ $'#Architecture: ' `uname -a` \
   ` `
   ```
   4. as a line breaker of script code `\`
-- The `uname` comand 
+1. Architecture
+  - following the example it must display "kernel name", "network node hostname", "kernel release",            
+    "kernel version", "machine hardware name" and "operating system"
+  - the comand `uname` has flags for each of that information, but we can use just one `-a` to display all of them
+2. CPU physical
+  - 
