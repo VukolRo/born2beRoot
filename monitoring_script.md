@@ -21,10 +21,10 @@
 ```               
 $'#Architecture: ' `uname -a` \           
 ```        
-  - use `$` to enable spec simbols further in quotes `" "`
-  - everithing in `" "` or `' '` will display in standard output
-  - everithing in quotes like u can see bellow will ran as a command
+  1. use `$` to enable spec simbols further in quotes `" "`
+  2. everithing in `" "` or `' '` will display in standard output
+  3. everithing in quotes like u can see bellow will ran as a command
   ```
   ` `
   ```
-  - as a line breaker of script code `\`
+  4. as a line breaker of script code `\`
