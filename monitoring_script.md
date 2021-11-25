@@ -12,10 +12,9 @@
 9. The number of active connections
 10. The number of users using the server
 11. The IPv4 address of your server and its MAC (Media Access Control) address
-12. The number of commands executed with the sudo program     
+12. The number of commands executed with the sudo program
 ##### example
-![image](https://user-images.githubusercontent.com/61047851/143479713-0db98068-bfec-4002-a53e-9873eb1ab6d6.png)
-      
+![image](https://user-images.githubusercontent.com/61047851/143479713-0db98068-bfec-4002-a53e-9873eb1ab6d6.png)            
 
 - All bash scripts should start with that first line
   `#!/bin/bash`
