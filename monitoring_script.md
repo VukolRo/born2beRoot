@@ -12,14 +12,14 @@
 9. The number of active connections
 10. The number of users using the server
 11. The IPv4 address of your server and its MAC (Media Access Control) address
-12. The number of commands executed with the sudo program
+12. The number of commands executed with the sudo program           
 
 - All bash scripts should start with that first line
   `#!/bin/bash`
 - Next we will use `wall` command which will display information received by our script on the terminals of all logged-in users         
-  Exampl of each line for bash script:
-```
-$'#Architecture: ' `uname -a` \
+  Exampl of each line for bash script:          
+```               
+$'#Architecture: ' `uname -a` \           
 ```        
   - use `$` to enable spec simbols further in quotes `" "`
   - everithing in `" "` or `' '` will display in standard output
