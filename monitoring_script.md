@@ -23,4 +23,4 @@ $'#Architecture: ' `uname -a` \
 ```        
   - use `$` to enable spec simbols further in quotes `" "`
   - everithing in `" "` or `' '` will display in standard output
-  - everithing in ` '``' ` will run as a comand
+  - everithing in ``comands`` will run as a comand
