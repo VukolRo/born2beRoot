@@ -29,7 +29,8 @@ $'#Architecture: ' `uname -a` \
   ```
   ` `
   ```
-  4. as a line breaker of script code `\`
+  4. as a line breaker of script code `\`      
+
 1. Architecture
   - following the example it must display "kernel name", "network node hostname", "kernel release",            
     "kernel version", "machine hardware name" and "operating system"
