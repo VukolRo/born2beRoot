@@ -94,7 +94,15 @@
   $'\n#Disk Usage: ' "${USEDDISK}/${TOTALDISK}Gb (${UTILRATEDISK})" \
   ```
 6. **CPU Load**             
-  
+  to display that value i'd recomend to install `mpstat` package
+  ```
+  $ apt install sysstat
+  ```         
+  run the `mpstat` comand and we can see activities for each available processor               
+  also there we have idle percentage, that we will use for our script
+  ```
+  $ mpstat | grep all| awk '{printf("%.1f%%"), 100-$13}'
+  ```
 
   
 
