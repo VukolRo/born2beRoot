@@ -16,20 +16,20 @@
 ##### example
 ![image](https://user-images.githubusercontent.com/61047851/143479713-0db98068-bfec-4002-a53e-9873eb1ab6d6.png)            
 
-- All bash scripts should start with that first line
+###### All bash scripts should start with that first line
   `#!/bin/bash`
-- Next we will use `wall` command which will display information received by our script on the terminals of all logged-in users         
+  - Next we will use `wall` command which will display information received by our script on the terminals of all logged-in users         
   Exampl of each line for bash script:          
-```               
-$'#Architecture: ' `uname -a` \           
-```        
+  ```               
+  $'#Architecture: ' `uname -a` \           
+  ```
   - use `$` to enable spec simbols further in quotes `" "`
   - everithing in `" "` or `' '` will display in standard output
   - everithing in quotes like u can see bellow will ran as a command
   ```
   ` `
   ```
-  - as a line breaker of script code `\`      
+  - use `\` as a line breaker of script code       
 
 1. Architecture
   - following the example it must display "kernel name", "network node hostname", "kernel release",            
