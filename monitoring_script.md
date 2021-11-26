@@ -103,6 +103,22 @@
   ```
   $ mpstat | grep all| awk '{printf("%.1f%%"), 100-$13}'
   ```
-
+7. **Last boot**                    
+  to display date and time of the last reboot use comand `who` with `-b` flag         
+  ```
+  $ who -b | awk '{print $3" "$4}
+  ```
+8. **LVM use**              
+  to check whether LVM is active or not use command `lsblk` and if in *type* column there is at least one "lvm" the answer is yes
+  ```
+  $ lsblk | grep lvm | awk '{print $6}' | awk '{if ($1 == "lvm") {print "yes";exit} else {print "no";exit} }'
+  ```    
+9. **Connection TCP**           
+  to display the number of active connections use `netstat` comand which displays the contents              
+  of various network-related data structures
+  ```
+  `netstat | grep ESTABLISHED |  wc -l` "ESTABLISHED"
+  ```
+10. **User log**
   
 
