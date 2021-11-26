@@ -14,7 +14,7 @@
 11. The IPv4 address of your server and its MAC (Media Access Control) address
 12. The number of commands executed with the sudo program
 ##### example
-![image](https://user-images.githubusercontent.com/61047851/143479713-0db98068-bfec-4002-a53e-9873eb1ab6d6.png)            
+<a id="example1" /> ![image](https://user-images.githubusercontent.com/61047851/143479713-0db98068-bfec-4002-a53e-9873eb1ab6d6.png)            
 
 ###### All bash scripts should start with that first line
   `#!/bin/bash`
@@ -57,5 +57,9 @@
   $ cat /proc/cpuinfo | grep "processor" | uniq | wc -l
   ```
 4. **Memory Usage**        
-  to 
-![image](https://user-images.githubusercontent.com/61047851/143567538-86b6455b-0d37-4b28-b233-ac35c9efe0df.png)
+  to display memory information use comand `free`
+![image](https://user-images.githubusercontent.com/61047851/143567538-86b6455b-0d37-4b28-b233-ac35c9efe0df.png)              
+  as we can see in subject on that [screeenshot](#example1)
+
+
+
