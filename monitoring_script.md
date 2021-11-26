@@ -31,11 +31,11 @@
   ```
   - use `\` as a line breaker of script code       
 
-1. Architecture
+1. **Architecture**
   - following the example it must display "kernel name", "network node hostname", "kernel release",            
     "kernel version", "machine hardware name" and "operating system"
   - the comand `uname` has flags for each of that information, but we can use just one `-a` to display all of them
-2. CPU physical         
+2. **CPU physical**         
   the core philosophy of Linux/UNIX is that everything is a document. Hardware information is also recorded in the file
   ```
   $ cat /proc/cpuinfo
@@ -49,11 +49,12 @@
   ```
   $ cat /proc/cpuinfo | grep "physical id" | uniq | wc -l
   ```         
-3. vCPU            
+3. **vCPU**            
   same as in previous step we take information about virtual processors from cpuinfo file,        
   count lines with "processor", which shows specifications of logical processors which we got
   and it's a virtual processors because of we run that OS in VirtualBox
   ```
   $ cat /proc/cpuinfo | grep "processor" | uniq | wc -l
   ```
-4. 
+4. **Memory Usage**        
+  
