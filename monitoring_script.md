@@ -57,7 +57,7 @@
   $ cat /proc/cpuinfo | grep "processor" | uniq | wc -l
   ```
 4. **Memory Usage**        
-  to display memory information use comand `free` with oprions --mega            
+  to display RAM information use comand `free` with oprions --mega            
 ![image](https://user-images.githubusercontent.com/61047851/143567538-86b6455b-0d37-4b28-b233-ac35c9efe0df.png)          
                    
   as we can see in subject on that [screeenshot](#example1) there is "MB" (megabytes), not MiB (mebibytes)          
@@ -72,6 +72,29 @@
   TOTALRAM=$(free --mega | grep Mem: | awk '{print $2}')
   USEDRAM=$(free --mega | grep Mem: | awk '{print $3}')
   UTILRATERAM=$(free --mega | grep Mem: | awk '{printf("%.2f"), $3/$2*100}')
+  ```            
+  and than use them in the `wall`
   ```
+  $'\n#Memory Usage: ' "${USEDRAM}/${TOTALRAM}MB (${UTILRATERAM}%)" \
+  ```
+5. **Disk Usage**          
+  to display available memory use comand `df`           
+  ![image](https://user-images.githubusercontent.com/61047851/143600744-161bd09a-68e5-4e98-b525-34a55ee1394c.png)             
+  use variables:
+  ```
+  TOTALDISK=$(df -BGB | awk '{fd += $2} END {print fd}')
+  USEDDISK=$(df -BMB | awk '{ud += $3} END {print ud}')
+  UTILRATEDISK=$(df -BMB | awk '{ud += $3} {fd += $2} END {printf("%.2f%%"), ud/fd*100}')
+  ```           
+  where `-BGB` shows values in gigabytes and `-BMB` in megabytes              
+  as we can see in [screeenshot](#example1) used value shown in MB and total value in Gb             
+  to count whole column to the variable, create variable inside `awk '{}'`           
+  than use that variables
+  ```
+  $'\n#Disk Usage: ' "${USEDDISK}/${TOTALDISK}Gb (${UTILRATEDISK})" \
+  ```
+6. **CPU Load**             
+  
+
   
 
