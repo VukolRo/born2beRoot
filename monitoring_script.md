@@ -57,4 +57,5 @@
   $ cat /proc/cpuinfo | grep "processor" | uniq | wc -l
   ```
 4. **Memory Usage**        
-  
+  to 
+![image](https://user-images.githubusercontent.com/61047851/143567538-86b6455b-0d37-4b28-b233-ac35c9efe0df.png)
