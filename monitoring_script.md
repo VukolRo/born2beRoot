@@ -61,6 +61,11 @@
 ![image](https://user-images.githubusercontent.com/61047851/143567538-86b6455b-0d37-4b28-b233-ac35c9efe0df.png)          
                    
   as we can see in subject on that [screeenshot](#example1) there is "MB" (megabytes), not MiB (mebibytes)          
-
+  also use `awk` to work with tab              
+  to refer to values in columns use `$` with index(started from 1) number of that column u need, `$0` refers to the entire line         
+  to print in stdout use `print` or `printf` in singl quots and braces `{}`
+  ```
+  $ free --mega | grep Mem: | awk '{print $2}'
+  ```
 
 
