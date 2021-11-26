@@ -23,13 +23,13 @@
 ```               
 $'#Architecture: ' `uname -a` \           
 ```        
-  1. use `$` to enable spec simbols further in quotes `" "`
-  2. everithing in `" "` or `' '` will display in standard output
-  3. everithing in quotes like u can see bellow will ran as a command
+  - use `$` to enable spec simbols further in quotes `" "`
+  - everithing in `" "` or `' '` will display in standard output
+  - everithing in quotes like u can see bellow will ran as a command
   ```
   ` `
   ```
-  4. as a line breaker of script code `\`      
+  - as a line breaker of script code `\`      
 
 1. Architecture
   - following the example it must display "kernel name", "network node hostname", "kernel release",            
