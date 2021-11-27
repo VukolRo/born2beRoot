@@ -34,7 +34,7 @@
 1. **Architecture**
   - following the example it must display "kernel name", "network node hostname", "kernel release",            
     "kernel version", "machine hardware name" and "operating system"
-  - the comand `uname` has flags for each of that information, but we can use just one `-a` to display all of them
+  - the command `uname` has flags for each of that information, but we can use just one `-a` to display all of them
 2. **CPU physical**         
   the core philosophy of Linux/UNIX is that everything is a document. Hardware information is also recorded in the file
   ```
@@ -57,7 +57,7 @@
   $ cat /proc/cpuinfo | grep "processor" | uniq | wc -l
   ```
 4. **Memory Usage**        
-  to display RAM information use comand `free` with oprions --mega            
+  to display RAM information use command `free` with oprions --mega            
 ![image](https://user-images.githubusercontent.com/61047851/143567538-86b6455b-0d37-4b28-b233-ac35c9efe0df.png)          
                    
   as we can see in subject on that [screeenshot](#example1) there is "MB" (megabytes), not MiB (mebibytes)          
@@ -78,7 +78,7 @@
   $'\n#Memory Usage: ' "${USEDRAM}/${TOTALRAM}MB (${UTILRATERAM}%)" \
   ```
 5. **Disk Usage**          
-  to display available memory use comand `df`           
+  to display available memory use command `df`           
   ![image](https://user-images.githubusercontent.com/61047851/143600744-161bd09a-68e5-4e98-b525-34a55ee1394c.png)             
   use variables:
   ```
@@ -98,13 +98,13 @@
   ```
   $ apt install sysstat
   ```         
-  run the `mpstat` comand and we can see activities for each available processor               
+  run the `mpstat` command and we can see activities for each available processor               
   also there we have idle percentage, that we will use for our script
   ```
   $ mpstat | grep all| awk '{printf("%.1f%%"), 100-$13}'
   ```
 7. **Last boot**                    
-  to display date and time of the last reboot use comand `who` with `-b` flag         
+  to display date and time of the last reboot use command `who` with `-b` flag         
   ```
   $ who -b | awk '{print $3" "$4}
   ```
@@ -114,7 +114,7 @@
   $ lsblk | grep lvm | awk '{print $6}' | awk '{if ($1 == "lvm") {print "yes";exit} else {print "no";exit} }'
   ```    
 9. **Connection TCP**           
-  to display the number of active connections use `netstat` comand which displays the contents              
+  to display the number of active connections use `netstat` command which displays the contents              
   of various network-related data structures
   ```
   `netstat | grep ESTABLISHED |  wc -l` "ESTABLISHED"
@@ -126,4 +126,12 @@
   $ who | wc -l
   ```
 11. **Network: IP **
+  to display the ip address of host use command `hostname` with `-I` flag        
+  to display MAC address of host use `ip link show` and `grep link/ether` than with `awk` take second value
 
+12. **Sudo**       
+  to display the number of commands executed with the sudo program use `journalctl` which is query the systemd journal            
+  also use `_COMM=sudo` filtr, and with `-g` flag which is same as grep filter output with "COMMAND"      
+  ```
+  $ journalctl _COMM=sudo -g COMMAND | wc -l
+  ```
