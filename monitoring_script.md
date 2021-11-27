@@ -119,6 +119,11 @@
   ```
   `netstat | grep ESTABLISHED |  wc -l` "ESTABLISHED"
   ```
-10. **User log**
-  
+10. **User log**             
+  the `who` utility displays a list of all users currently logged on             
+  to display the number of users using the server lets count linex in that list with `wc -l`
+  ```
+  $ who | wc -l
+  ```
+11. **Network: IP **
 
