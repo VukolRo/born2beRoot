@@ -47,7 +47,7 @@
 - `hostnamectl` check current hostname        
   change hostname       
   ```
-  $ hostnamectl <old-hostname> <new_hostname>
+  $ hostnamectl set-hostname <new_hostname>
   ```
 - `reboot` use that command to reboot your server
 - `poweroff` use that command to shutdown the server
