@@ -134,4 +134,26 @@
   also use `_COMM=sudo` filtr, and with `-g` flag which is same as grep filter output with "COMMAND"      
   ```
   $ journalctl _COMM=sudo -g COMMAND | wc -l
+  ```              
+                    
+                    
+  **Do not forget**             
+  to add the following line into `crontab -e -u root` file
   ```
+  */10 * * * * bash /path/to/your/script/monitoring.sh
+  ```                
+  and also u may add the following lines which will run script everu 30 seconds
+  ```
+  * * * * * bash /path/to/your/script/monitoring.sh
+  * * * * * ( sleep 30 ; bash /path/to/your/script/monitoring.sh )
+  ```               
+  also in `visudo` file u should allow to execute your script without asking for password
+  ```
+  root ALL=(root) NOPASSWD: path/to/your/script/monitoring.sh
+  ```           
+  and of course your script must have access to exucuti as a root
+  ```
+  $ chmod 744 /path/to/your/script/monitoring.sh
+  ```
+  
+  
