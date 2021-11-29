@@ -124,7 +124,11 @@
   - connect to your server from terminal of your host PC
     ```         
     $ ssh <your_username>@0.0.0.0 -p 4242       
-    ```         
+    ```
+    or
+    ```
+    $ ssh <your_username>@localhost -p 4242 
+    ```
     to quit the connection use comand        
     `exit`        
     you may find out the IP address, which you need to connect to your server, by running     
@@ -136,6 +140,23 @@
   ```
   $ apt install net-tools
   ```         
+                 
+  #### Tips for evaluation          
+  - `hostnamectl status` - show current host information;
+  - `hostnamectl set-hostname <new-hostname>` - change hostname on command line.
+  - `less /etc/passwd | cut -d ":" -f 1` - show list of all users on computer;
+  - `users` - show list of all users who are currently logged in;
+  - `useradd <username>` - create new user with home directory;
+  - `usermod <username>` - modify users settings, `-l` for username, `-c` for comments/Full Name and `-g` for GID;
+  - `userdel -r <username>` - deletes user and all files attached to it;
+  - `id -u <username>` - shows user's UID.
+  - `groups <username>` - shows user's groups;
+  - `groupadd <groupname>` - create new group;
+  - `groupdel <groupname>` - delete group;
+  - `gpasswd -a <username> <groupname>` - adds user to group;
+  - `gpasswd -d <username> <groupname>` - removes user from group;
+  - `getent group <groupname>` - show users in group;
+  - `id -g <username>` - show user's main group GID.
   
 
   
