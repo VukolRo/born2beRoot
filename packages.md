@@ -147,7 +147,7 @@
   - `hostnamectl set-hostname <new-hostname>` - change hostname on command line.
   - `less /etc/passwd | cut -d ":" -f 1` - show list of all users on computer;
   - `users` - show list of all users who are currently logged in;
-  - `useradd <username>` - create new user with home directory;
+  - `adduser <username>` - create new user with home directory;
   - `usermod <username>` - modify users settings, `-l` for username, `-c` for comments/Full Name and `-g` for GID;
   - `userdel -r <username>` - deletes user and all files attached to it;
   - `id -u <username>` - shows user's UID.
