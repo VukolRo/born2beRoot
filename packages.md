@@ -58,6 +58,7 @@
   - `sudo visudo` open sudoers file      
   - add this line in file to give your user root permition         
     `<user_name> ALL=(ALL:ALL) ALL`        
+    ![image](https://user-images.githubusercontent.com/61047851/144091217-535b8b78-4bb2-471f-9d84-9578583f873a.png)
   - `groupadd` create a new group       
     creat a group "user42" as required in subject
     ```
