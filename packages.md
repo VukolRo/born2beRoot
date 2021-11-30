@@ -157,6 +157,10 @@
   - `gpasswd -d <username> <groupname>` - removes user from group;
   - `getent group <groupname>` - show users in group;
   - `id -g <username>` - show user's main group GID.
+  - `$ passwd <user_name>` - change the password of user
+  - `$ passwd -S <user_name>` - show information about user password
+  - `$ chage -l <user_name>` - show extended information about user password
+  - `$ service --status-all` - display all servises
   
 
   
