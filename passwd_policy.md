@@ -9,7 +9,7 @@ We must apply a strong password policy for all users, root included, that must b
 > 6. The password must not include the name of the user.
 > 7. The following rule does not apply to the root password **by default**: The password must have at least 7 characters that are not part of the former password.
 
-The first 4 rules must be set by editing `/etc/login.defs`. The final result should look like this:
+The first 3 rules must be set by editing `/etc/login.defs`. The final result should look like this:
 ![image](https://user-images.githubusercontent.com/61047851/144067856-85c2c58f-5d7b-492b-884b-1a975d5565bd.png)           
            
 For the users already created (root included) these optons will not be automatically enabled. You will have to enforce them by using the `chage` command and manually apply the rules above. You can use the flag `-l` to list the rules applied to a specific user.
